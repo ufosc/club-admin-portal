@@ -44,6 +44,8 @@ A list of use cases can be found [here](https://github.com/ufosc/club-admin-port
 ## Built With
 
 - [Vue](https://vuejs.org/) - a JavaScript Framework that is the best of Angular and React
+- [TypeScript](https://github.com/ufosc/resources/blob/master/resources/typescript.md) - a typed super set of JavaScript that works with Vue
+- [HTML](https://github.com/ufosc/resources/blob/master/resources/html.md) - the web's markup language 
 
 ## Contributing
 
