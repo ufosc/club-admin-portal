@@ -1033,3 +1033,6 @@ xcuserdata/
 # !tools/packages.config
 
 # End of https://www.gitignore.io/api/macos,windows,linux,node,git,python,java,c++,c,csharp,ruby,android,visualstudio,visualstudiocode,eclipse,netbeans,sublimetext,intellij,xcode,codeblocks,pycharm
+
+# Ignore the database
+/db

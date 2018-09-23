@@ -1,0 +1,24 @@
+{
+  "name": "club-admin-portal",
+  "version": "0.0.1",
+  "description": "Web app for accessing and modifying club data stored in the [club backend](https://github.com/ufosc/club-backend).",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufosc/club-admin-portal.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ufosc/club-admin-portal/issues"
+  },
+  "homepage": "https://github.com/ufosc/club-admin-portal#readme"
+}
