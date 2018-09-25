@@ -1,0 +1,24 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    "quotemark": [true, "double", "avoid-escape"],
+    "indent": [true, "tab", 4],
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+		"no-consecutive-blank-lines": [true, 2],
+		"no-null-keyword": true,
+		"no-var-keyword": true,
+		"semicolon": [true, "always"],
+		"variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
+		"no-invalid-this": true
+  }
+}
