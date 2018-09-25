@@ -6,4 +6,6 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - .:/app
+      - ./public/:/app/public
+      - ./src/:/app/src
+      - ./tests/:/app/tests

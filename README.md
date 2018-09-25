@@ -4,39 +4,31 @@ Web app for accessing and modifying club data stored in the [club backend](https
 
 A list of use cases can be found [here](https://github.com/ufosc/club-admin-portal/issues/2).
 
-<!-- ## Getting Started
+## Getting Started
 
-**A detailed instruction list on what to install and configure to start working on the project.**
+We will use Docker to develop test the code.
 
 ### Installing
 
-**Step by step guide**
+Install [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) and [Docker compose](https://docs.docker.com/compose/install/).
 
-**Give step**
+### Running
 
-```
-**code to run**
-```
+To run the app
 
-**Next step**
-
-```
-**code to run**
+```bash
+docker-compose up
 ```
 
-**End with an example of getting some data out of the system or using it for a little demo.**
+And go to [localhost:8080](http://localhost:8080/).
 
-### Compiling 
+Once you are done, you can press "Ctrl-C" in the terminal or type
 
-**Give step**
-
-```
-**code to run**
+```bash
+docker-compose down
 ```
 
-**End with an example of getting some data out of the system or using it for a little demo.**
-
-## Deployment
+<!-- ## Deployment
 
 **Additional steps to deploy and run the project**
  -->
@@ -45,7 +37,7 @@ A list of use cases can be found [here](https://github.com/ufosc/club-admin-port
 
 - [Vue](https://vuejs.org/) - a JavaScript Framework that is the best of Angular and React
 - [TypeScript](https://github.com/ufosc/resources/blob/master/resources/typescript.md) - a typed super set of JavaScript that works with Vue
-- [HTML](https://github.com/ufosc/resources/blob/master/resources/html.md) - the web's markup language 
+- [HTML](https://github.com/ufosc/resources/blob/master/resources/html.md) - the web's markup language
 
 ## Contributing
 

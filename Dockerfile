@@ -1,19 +1,19 @@
 FROM node:9.11.1-alpine
 
-# make the 'app' folder the current working directory
+# Make the 'app' folder the current working directory
 WORKDIR /app
 
-# copy both 'package.json' and 'package-lock.json' (if available)
+# Copy both 'package.json' and 'package-lock.json' (if available)
 COPY package*.json ./
 
-# install project dependencies
+# Install project dependencies
 RUN npm install
 
-# copy project files and folders to the current working directory (i.e. 'app' folder)
+# Copy project files and folders to the current working directory (i.e. 'app' folder)
 COPY . .
 
+# Open up the container's port 8080
 EXPOSE 8080
 
-# run with live reloading
+# Run with live reloading
 CMD npm run serve
-
