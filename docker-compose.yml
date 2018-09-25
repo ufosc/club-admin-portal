@@ -1,16 +1,9 @@
 version: '3'
 
 services:
-  db:
-    image: postgres
-    volumes:
-      - ./db:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_USER=osc
-      - POSTGRES_PASSWORD=stallman
   vue:
     build: .
+    ports:
+      - "8080:8080"
     volumes:
-      - .:/usr/src/admin-portal
-    depends_on:
-      - db
+      - .:/app
