@@ -22,11 +22,20 @@ docker-compose up
 
 And go to [localhost:8080](http://localhost:8080/).
 
+Testing can be done with
+
+```bash
+docker-compose run vue npm run test:unit
+docker-compose run vue npm run test:e2e
+```
+
 Once you are done, you can press "Ctrl-C" in the terminal or type
 
 ```bash
 docker-compose down
 ```
+
+More info on using Docker can be found [here](docs/docker-setup.md)
 
 <!-- ## Deployment
 
