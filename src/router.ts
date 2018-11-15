@@ -1,8 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-import LoginComponent from "./views/login.vue"
-import SecureComponent from "./views/secure.vue"
+import LoginComponent from "./components/login.vue"
+import SecureComponent from "./views/Secure.vue"
+import AppComponent from "./App.vue"
 
 Vue.use(Router);
 
@@ -12,9 +13,8 @@ export default new Router({
   routes: [
     {
       path: "/",
-      redirect: {
-        name: "login"
-      }
+      name: "App",
+      component: AppComponent
     },
     {
       path: "/login",
