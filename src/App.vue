@@ -1,38 +1,32 @@
 <template>
   <div id="app">
-    <h1>Open Source Club admin portal</h1>
-    <div v-if="authenticated" id="nav">
-      <router-link v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
-      <router-view @authenticated="setAuthenticated" />
-    </div>
-    <login @authenticated="setAuthenticated"></login>
+    <router-view @authenticated="setAuthenticated" />
+    <router-link v-if="authenticated" to="/secure" v-on:click.native="logout()" replace>Logout</router-link>
   </div>
 </template>
 
 <script>
-import login from "@/components/login.vue"; 
   export default {
     name: 'App',
     data () {
       return {
-        authenticated : false,
+       authenticated: false,
       }
     },
     components: {
-		  login,
+
     },
     
     methods: {
       setAuthenticated(isAuth) {
-        console.log("Authentication is: " + isAuth);
-        this.authenticated = isAuth;
-      },
-
+          console.log("Authentication is: " + isAuth);
+          this.authenticated = isAuth;
+        },
       logout() {
         console.log("Log me out");
         this.authenticated = false;
-        console.log("auth", this.authenticated);
-      }
+        this.$router.replace({ name: "home" });
+        }
     }
   }
 </script>
